@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 // snap-mandatory es la forma en la que se va a hacer el snap, en este caso va a ser un snap muy rapido, y snap-y indica que el snap va a ser en el eje de las Y, snap-start indica que elementos hijo van a tener el snap y a que parte del elmento se va a dirijir
 
@@ -35,7 +36,8 @@ export default function Home() {
         <Skills/>
       </section>
       {/* Projects */}
-
+      <Projects/>
+      <section id="projects" className="snap-center"></section>
       {/* Contact ME */}
     </div>
   );

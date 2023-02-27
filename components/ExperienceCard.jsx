@@ -27,7 +27,7 @@ export default function ExperienceCard() {
         <Image
           src={imagePerfil}
           alt="Amazon"
-          className="w-full h-full rounded-full object-cover object-center"
+          className="w-full h-full rounded-full object-cover"
         />
       </motion.div>
 
