@@ -22,7 +22,7 @@ export default function ExperienceCard() {
         viewport={{
           once: true,
         }}
-        className="border border-[#ffffff] w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px]"
+        className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px]"
       >
         <Image
           src={imagePerfil}
