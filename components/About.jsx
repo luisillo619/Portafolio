@@ -6,6 +6,9 @@ import fotoPerfil from "../public/assets/foto_de_perfil_2.jpg";
 // Flex-shink: 0 indicar que el elemento no debe encogerse para ajustarse al contenedor si hay un espacio insuficiente, 0.5 indica que sede la mitad etc
 
 // justify-evenly reparte el main axis(x) dejando un espacio igual entre cada elemento
+
+// space-y-7 aplica un espaciado vertical entre los elementos hijos del contenedor. En este caso, se aplica un espaciado de 7 unidades de medida (como píxeles o em). funciona de manera similar que un gap en grid. osea que aplica margenes entre los cada elemento hijo
+
 export default function About() {
   return (
     <motion.div
@@ -33,16 +36,16 @@ export default function About() {
           opacity: 1,
         }}
         transition={{
-          duration: 1.2,
+          duration: 1.5,
         }}
         viewport={{
           once: true,
         }}
-        className="-mb-40 ch:-mb-36 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95"
+        className="-mb-40 ch:-mb-36 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[350px]"
       >
         <Image
           src={fotoPerfil}
-          className="w-full h-full rounded-full object-cover  md:rounded-lg"
+          className="w-full h-full   rounded-full object-cover  md:rounded-lg"
           alt="Perfil"
         />
       </motion.div>

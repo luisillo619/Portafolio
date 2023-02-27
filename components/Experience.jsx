@@ -6,13 +6,15 @@ import ExperienceCard from "./ExperienceCard";
 
 // max-w-full Esta propiedad es útil para garantizar que un elemento no exceda el ancho del contenedor, lo que podría ocasionar problemas de visualización en dispositivos con diferentes tamaños de pantalla.
 
+// space-x-10 indica que entre cada elemento hijo(entre cada experienceCard) va a ver un espacio horizontal. quiere decir que va a ver un margen interno left y rigth similar al gap de grid
+
 export default function Experience() {
   return (
-    <motion.div className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
+    <motion.div className="border border-[#ffffff] h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl md:top-24">
         Experiencia
       </h3>
-      <div>
+      <div className="w-full flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
