@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 // tracking-widest es el espacio entre cada letra
 // lg hace referencia a pantallas grandes
+// overflow hiden sirve para evitar desbordamientos adaptando el contenido a la pagina total,sin importar que el contenido se corte, pero para eso tenemos over-scroll en el index
+
 export default function Hero() {
   const [text, count] = useTypewriter({
     words: [
