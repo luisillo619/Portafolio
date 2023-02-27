@@ -32,7 +32,7 @@ export default function Hero() {
           Desarollador fullstack
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10  ">
-          <span className="mr-3">{text}</span>
+          <span className="mr-3 text-3xl">{text}</span>
           <Cursor cursorColor="#f7AB0A" />
         </h1>
 

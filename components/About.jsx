@@ -16,15 +16,14 @@ export default function About() {
         opacity: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 1.8,
       }}
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center overflow-clip"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl md:top-24">
         Acerca de:
       </h3>
-
-      <motion.img
+      <motion.div
         initial={{
           x: -200,
           opacity: 0,
@@ -39,17 +38,23 @@ export default function About() {
         viewport={{
           once: true,
         }}
-        src="https://th.bing.com/th/id/R.1fad33dff494a8fcfac188efebfdc385?rik=XOrBWRByWzBgaQ&riu=http%3a%2f%2fvignette2.wikia.nocookie.net%2fdragonballfanon%2fimages%2f6%2f68%2fDragon_ball_kid_goku_21_by_superjmanplay2-d5roz2f.png%2frevision%2flatest%3fcb%3d20130303235513%26path-prefix%3des&ehk=uQjbANIYjQSEptwFv7qY6pFK6MbetFbHqeR%2fPN6xJOg%3d&risl=&pid=ImgRaw&r=0"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95"
-      />
-      <div className="bg-[#643b3b] space-y-10 px-0 md:px-10">
+        className="-mb-40 ch:-mb-36 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95"
+      >
+        <Image
+          src={fotoPerfil}
+          className="w-full h-full rounded-full object-cover  md:rounded-lg"
+          alt="Perfil"
+        />
+      </motion.div>
+
+      <div className=" -mb-[240px] md:space-y-10 ch:-mb-[150px] md:-mb-[0px] px-0 md:px-10">
         <h4 className="text-4xl font-semibold">Mi pequeño background</h4>
-        <p className="text-base">
+        <p className="text-base my-8">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
           id, vero excepturi ipsam dolore quos, cupiditate, quidem natus
           quisquam quas quaerat pariatur a explicabo corporis aperiam incidunt
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          minus quos alias quisquam vero quas officia fugiat velit quasi
+          laborum!
         </p>
       </div>
     </motion.div>
