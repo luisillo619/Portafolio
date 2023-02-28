@@ -1,5 +1,6 @@
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import BackTotopButton from "./BackTotopButton";
 // En tailwind primero se genera el css en mobile y con la propiedad md se genera para panallas mas grandes.Osea tailwind es first mobile. se tiene que agregar md: para cada propiedad que se quiera modificar
 // mx-auto es margin: 0 auto
 
@@ -67,11 +68,13 @@ export default function Header() {
           fgColor="gray"
           bgColor="transparent"
         />
+        
         {/* diplay hidden para oculta y en pc diplay inline-flex */}
 
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
           Contactame
         </p>
+        <BackTotopButton />
       </motion.div>
     </header>
   );
