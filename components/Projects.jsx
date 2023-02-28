@@ -68,7 +68,7 @@ export default function Projects() {
         })}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[#ff0000]/40 left-0 h-[500px] -skew-y-12"></div>
+      <div className="w-full absolute top-[30%] bg-[#ff0000]/20 left-0 h-[500px] -skew-y-12"></div>
     </motion.div>
   );
 }
