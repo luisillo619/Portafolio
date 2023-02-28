@@ -6,26 +6,23 @@ import ExperienceCard from "./ExperienceCard";
 
 // max-w-full Esta propiedad es útil para garantizar que un elemento no exceda el ancho del contenedor, lo que podría ocasionar problemas de visualización en dispositivos con diferentes tamaños de pantalla.
 
-// space-x-10 indica que entre cada elemento hijo(entre cada experienceCard) va a ver un espacio horizontal. quiere decir que va a ver un margen interno left y rigth similar al gap de grid
+// space-x-10 es como un space-between o evenly, indica que entre cada elemento hijo(entre cada experienceCard) va a ver un espacio horizontal. quiere decir que va a ver un margen interno left y rigth similar al gap de grid
 
 export default function Experience() {
   return (
-    <motion.div 
-    initial={{
-opacity:0
-    }}
-    whileInView={{
-opacity:1
-    }}
-    transition={{
-duration:1.5
-    }}
-    className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl md:top-24">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{ duration: 1.5 }}
+      className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
+    >
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Experiencia
       </h3>
-      <div className="w-full flex space-x-7 overflow-x-scroll p-10 snap-x snap-mandatory">
-        <ExperienceCard />
+
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
