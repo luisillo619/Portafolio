@@ -1,6 +1,7 @@
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-import BackTotopButton from "./BackTotopButton";
+
+import Link from "next/link";
 // En tailwind primero se genera el css en mobile y con la propiedad md se genera para panallas mas grandes.Osea tailwind es first mobile. se tiene que agregar md: para cada propiedad que se quiera modificar
 // mx-auto es margin: 0 auto
 
@@ -60,21 +61,29 @@ export default function Header() {
         transition={{
           duration: 1.2,
         }}
-        className="flex flex-row items-center text-gray-300 cursor-pointer"
+        className="flex flex-row items-center text-gray-300 cursor-pointer space-x-4"
       >
         <SocialIcon
+          url="#contact"
           className="cursor-pointer"
           network="email"
           fgColor="gray"
           bgColor="transparent"
         />
-        
-        {/* diplay hidden para oculta y en pc diplay inline-flex */}
 
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Contactame
-        </p>
-        <BackTotopButton />
+        {/* diplay hidden para oculta y en pc diplay inline-flex */}
+        <Link href="#contact">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+            Contactame
+          </p>
+        </Link>
+
+        <Link href="#hero">
+          <button className="uppercase hidden md:inline-flex text-sm px-3 py-2 text-gray-400 border border-[#242424] rounded-full transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40">
+            Subir
+          </button>
+          <button className="heroButton md:hidden">icono</button>
+        </Link>
       </motion.div>
     </header>
   );

@@ -45,7 +45,7 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
-        
+
     </div>
   );
 }
