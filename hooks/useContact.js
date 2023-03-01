@@ -1,6 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
-
+import emailjs from '@emailjs/browser'
 function useContact(initialForm, validateForm) {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
@@ -23,31 +22,30 @@ function useContact(initialForm, validateForm) {
     e.preventDefault();
     const formErrors = validateForm(form);
     setErrors(formErrors);
-  
+
     if (Object.keys(formErrors).length === 0) {
-      const url = "https://formsubmit.co/luiscarlosrangel619@gmail.com";
-  
+      
       setIsLoading(true);
       try {
-        const response = await axios.post(url, JSON.stringify(form), {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-        console.log(response);
+        const res = await emailjs.sendForm(
+          "service_5ighawm",
+          "template_m3r2xpl",
+          e.target,
+          "Wh7NDcRMB14lr1_Ox"
+        );
+    
         setIsLoading(false);
         setSuccess(true);
-  
-        setTimeout(() => {
-          setSuccess(null);
-        }, 400);
+       
       } catch (error) {
         console.log(error);
         setIsLoading(false);
         setSuccess(false);
+        
+      }finally{
         setTimeout(() => {
           setSuccess(null);
-        }, 400);
+        }, 500);
       }
     }
   };

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Loader({ isLoading, success }) {
   return (
     <div>
-      <div className={isLoading && style.loader}></div>
+      <div className={isLoading ? style.loader : undefined}></div>
       {success && (
         <motion.span
           initial={{

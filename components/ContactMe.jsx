@@ -143,7 +143,7 @@ export default function ContactMe() {
           </button>
         </form>
         <div className="flex flex-col text-center items-center relative">
-          <Loader isLoading={isLoading} success={success} />
+          <Loader isLoading={isLoading ? "loading" : undefined} success={success} />
         </div>
       </div>
     </div>
