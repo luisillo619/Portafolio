@@ -13,8 +13,8 @@ export default function Hero() {
     words: [
       "Hola",
       "Me llamo Luis",
-      "Soy-un-joven-que-le-gusta-el-deporte.jsx",
-      "<PeroAmoMasCodear />",
+      "Chico-Deportista.jsx",
+      "<PeroAmoMasProgramar />",
     ],
     loop: true,
     delaySpeed: 300,
