@@ -16,7 +16,8 @@ export default function Projects() {
     },
   ];
   return (
-    <motion.div
+    <div className="bg-[#ffff] h-screen">
+      <motion.div
       initial={{
         opacity: 0,
       }}
@@ -26,13 +27,13 @@ export default function Projects() {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="bg-[#000000] h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Proyectos
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {projects.map((project, index) => {
           return (
             <div
@@ -70,5 +71,7 @@ export default function Projects() {
 
       <div className="w-full absolute top-[30%] bg-[#ff0000]/20 left-0 h-[500px] -skew-y-12"></div>
     </motion.div>
+    </div>
+    
   );
 }

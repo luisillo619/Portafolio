@@ -78,12 +78,7 @@ export default function Header() {
           </p>
         </Link>
 
-        <Link href="#hero">
-          <button className="uppercase hidden md:inline-flex text-sm px-3 py-2 text-gray-400 border border-[#242424] rounded-full transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40">
-            Subir
-          </button>
-          <button className="heroButton md:hidden">icono</button>
-        </Link>
+      
       </motion.div>
     </header>
   );
