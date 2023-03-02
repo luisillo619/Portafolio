@@ -35,7 +35,7 @@ export default function About() {
             opacity: 1,
           }}
           viewport={{ once: true }}
-          className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+          className=" -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[450px] xl:h-[550px] max-h-[85%]"
         >
           
           <Image
@@ -45,7 +45,7 @@ export default function About() {
           />
         </motion.div>
       
-        <div className="px-0 md:px-10">
+        <div className="px-0 pb-20 md:px-10 md:pt-8">
           <p className="text-base md:text-[18px]">
             Como Desarrollador Full-Stack apasionado, cuento con experiencia en
             la creación de aplicaciones web y e-commerce. Poseo habilidades en
