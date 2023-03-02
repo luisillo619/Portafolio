@@ -16,7 +16,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="bg-[#ffff] h-screen">
+    <div className=" h-screen">
       <motion.div
       initial={{
         opacity: 0,

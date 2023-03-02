@@ -11,7 +11,7 @@ export default function Skills() {
         opacity: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 1.2,
       }}
       className="flex flex-col relative text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center justify-center"
     >

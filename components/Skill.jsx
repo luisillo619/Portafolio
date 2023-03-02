@@ -2,23 +2,21 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import css from "../public/assets/css.png";
 
-const props = {
-  diectionLeft: Boolean,
-};
 
-export default function Skill(props) {
+
+export default function Skill() {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.div
         initial={{
-          x: props.directionLeft ? -50 : 50,
+          x: true ? -50 : 50,
           opacity: 0,
         }}
         whileInView={{
           opacity: 1,
           x: 0,
         }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.2 }}
         className="rounded-full border border-gray-500 w-24 h-24 xl:w-32 xl:h-32 filter md:w-28 md:h-28 group-hover:grayscale transition duration-300 ease-in-out"
       >
         <Image
