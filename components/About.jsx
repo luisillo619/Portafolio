@@ -15,13 +15,13 @@ export default function About() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center overflow-y-scroll md:overflow-hidden"
+      className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden"
     >
       <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl md:tracking-[20px]">
         Acerca de mi
       </h3>
 
-      <div className=" flex flex-col max-h-[100%] space-y-28 items-center pt-52 md:text-left md:flex-row md:space-y-0 md:pt-0">
+      <div className=" flex flex-col max-h-[100%] space-y-28 items-center pt-36 md:text-left md:flex-row md:space-y-0 md:pt-0">
         <motion.div
           initial={{
             x: -200,
@@ -45,7 +45,7 @@ export default function About() {
           />
         </motion.div>
       
-        <div className="px-0 pb-20 md:px-10 md:pt-8">
+        <div className="px-0 pb-20 md:px-10 md:pt-8 overflow-x-scroll overflow-y-auto md:overflow-hidden">
           <p className="text-base md:text-[18px]">
             Como Desarrollador Full-Stack apasionado, cuento con experiencia en
             la creación de aplicaciones web y e-commerce. Poseo habilidades en
