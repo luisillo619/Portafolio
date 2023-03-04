@@ -9,6 +9,7 @@ import ContactMe from "@/components/ContactMe";
 import Link from "next/link";
 // snap-mandatory es la forma en la que se va a hacer el snap, en este caso va a ser un snap muy rapido, y snap-y indica que el snap va a ser en el eje de las Y, snap-start indica que elementos hijo van a tener el snap y a que parte del elmento se va a dirijir
 
+//FALTA DECIRLE A LA INTELIGENCIA QUE MEJORE EXPERIENCE Y EXPERIENCECARD y contactMe
 export default function Home() {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll  z-0 overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">

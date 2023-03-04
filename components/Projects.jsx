@@ -10,8 +10,8 @@ const projects = [
   },
   {
     name: "Project 2",
-    img: "",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elitsssssssssssssssssssssssssssss assssssssssssssssss asasasasasasasasasasasasasasasasasas asasasasasasasasasasasas.     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, repudiandae. Vitae doloribus autem voluptatibus cupiditate non totam cum neque! Quae similique pariatur perspiciatis vero porro eveniet quidem ducimus sapiente soluta?",
+    img: pokeApiImg,
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elitsssssssssssssssssssssssssssss assssssssssssssssss asasasasasasasasasasasasasasasasasas asasasasasasasasasasasas.     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, repudiandae. Vitae doloribus autem voluptatibus cupiditate non totam cum neque! Quae similique pariatur perspiciatis vero porro eveniet quidem ducimus sapiente soluta?     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, repudiandae. Vitae doloribus autem voluptatibus cupiditate non totam cum neque! Quae similique pariatur perspiciatis vero porro eveniet quidem ducimus sapiente soluta?",
 
   },
 ];
@@ -46,6 +46,7 @@ export default function Projects() {
                   <Image
                     src={project.img}
                     alt={project.name}
+                    placeholder="blur"
                     className="w-full h-full object-cover md:rounded-lg"
                   />
                 )}
