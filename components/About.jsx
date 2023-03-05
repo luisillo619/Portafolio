@@ -15,7 +15,7 @@ export default function About() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden pb-14 md:pb-0"
+      className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden pb-28 md:pb-0"
     >
       <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl md:tracking-[20px]">
         Acerca de mí
@@ -34,7 +34,7 @@ export default function About() {
           transition={{
             duration: 1.2,
           }}
-          className="-mb-20 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[450px] xl:h-[550px] max-h-[85%]"
+          className="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[450px] xl:h-[550px] max-h-[85%]"
         >
           <Image
             className="w-full h-full rounded-full object-cover md:rounded-lg"

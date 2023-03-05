@@ -20,7 +20,7 @@ export default function Home() {
 
       <Header />
 
-      <section id="hero" className="snap-start">
+      <section id="hero" className="snap-center">
         <Hero />
       </section>
 
@@ -32,7 +32,7 @@ export default function Home() {
         <Experience />
       </section> */}
 
-      <section id="skills" className="snap-start">
+      <section id="skills" className="snap-center">
         <Skills />
       </section>
 
@@ -44,7 +44,7 @@ export default function Home() {
         <ContactMe />
       </section>
       <Link href={"#hero"}>
-        <footer className="sticky bottom-5 w-full cursor-pointer">
+        <footer className="sticky  bottom-8 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"

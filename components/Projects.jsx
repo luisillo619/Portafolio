@@ -33,7 +33,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 snap-center flex flex-col max-h-[100%] space-y-7 items-center justify-center md:p-44 h-screen pt-20 md:pt-0 "
+              className="w-full flex-shrink-0 snap-center flex flex-col max-h-[100%] space-y-7 items-center justify-center md:p-44 h-screen pt-20 pb-10 md:pt-0 md:pb-0"
             >
               <motion.div
                 initial={{ y: -100, opacity: 0 }}
