@@ -44,13 +44,9 @@ export default function Home() {
         <ContactMe />
       </section>
       <Link href={"#hero"}>
-        <footer className="sticky bottom-[4%] w-full cursor-pointer p-7">
-          <div className="flex items-center justify-center">
-            <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://th.bing.com/th/id/OIP.tvfHkWZ_RsD5By37v_Zb1AHaJF?pid=ImgDet&rs=1"
-              alt=""
-            />
+        <footer className=" w-full cursor-pointer ">
+          <div className=" fixed bottom-14 right-12 h-[60px] w-[60px] rounded-md flex justify-center items-center  transition-all duration-300 ease-in-out border-none hover:translate-y-[-10px] hover:bg-[#F7AB0A] hover:text-[#2f2b2b] hover:cursor-pointer">
+            icono
           </div>
         </footer>
       </Link>
