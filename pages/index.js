@@ -48,7 +48,7 @@ export default function Home() {
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://github.com/bitswa.png"
+              src="https://th.bing.com/th/id/OIP.tvfHkWZ_RsD5By37v_Zb1AHaJF?pid=ImgDet&rs=1"
               alt=""
             />
           </div>
