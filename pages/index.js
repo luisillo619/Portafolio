@@ -44,7 +44,7 @@ export default function Home() {
         <ContactMe />
       </section>
       <Link href={"#hero"}>
-        <footer className="sticky bottom-[4%] w-full cursor-pointer">
+        <footer className="sticky bottom-[3.5%] w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"

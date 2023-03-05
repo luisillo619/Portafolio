@@ -39,7 +39,7 @@ export default function Header() {
     ? initialVariants2.large
     : initialVariants2.medium;
   return (
-    <header className="sticky top-[4%] p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-[3.5%] p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={initialVatiant}
         animate={animationVariant}
