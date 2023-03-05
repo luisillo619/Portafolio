@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
 import Link from "next/link";
+import { useRef } from "react";
 // snap-mandatory es la forma en la que se va a hacer el snap, en este caso va a ser un snap muy rapido, y snap-y indica que el snap va a ser en el eje de las Y, snap-start indica que elementos hijo van a tener el snap y a que parte del elmento se va a dirijir
 
 //FALTA DECIRLE A LA INTELIGENCIA QUE MEJORE EXPERIENCE Y EXPERIENCE
@@ -50,7 +51,7 @@ export default function Home() {
         <ContactMe />
       </section>
       <footer className="fixed bottom-14 right-12">
-      <Link href="#hero">
+      <Link href="#hero" scroll={false}>
         <div className="w-[60px] h-[60px] rounded-md flex justify-center items-center transition-all duration-300 ease-in-out border-none cursor-pointer hover:translate-y-[-10px]">
           icono
         </div>
