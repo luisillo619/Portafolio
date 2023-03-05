@@ -51,7 +51,7 @@ export default function Home() {
       </section>
       <footer className="fixed bottom-14 right-12">
       <Link href="#hero">
-        <div className="w-[60px] h-[60px] rounded-md flex justify-center items-center transition-all duration-300 ease-in-out border-none cursor-pointer hover:translate-y-[-10px] hover:bg-[#F7AB0A] hover:text-[#2f2b2b]">
+        <div className="w-[60px] h-[60px] rounded-md flex justify-center items-center transition-all duration-300 ease-in-out border-none cursor-pointer hover:translate-y-[-10px]">
           icono
         </div>
       </Link>
