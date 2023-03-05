@@ -12,45 +12,53 @@ import fotoPerfil from "../public/assets/foto_de_perfil_2.jpg";
 export default function About() {
   return (
     <motion.div
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  transition={{ duration: 1.5 }}
-  className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden"
->
-  <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl md:tracking-[20px]">
-    Acerca de mí
-  </h3>
-
-  <div className="flex flex-col max-h-[100%] space-y-28 items-center pt-36 md:text-left md:flex-row md:space-y-0 md:pt-0">
-    <motion.div
-      initial={{
-        x: -200,
-        opacity: 0,
-      }}
-      whileInView={{
-        x: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1.2,
-      }}
-      className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[450px] xl:h-[550px] max-h-[85%]"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden pb-14 md:pb-0"
     >
-      <Image
-        className="w-full h-full rounded-full object-cover md:rounded-lg"
-        src={fotoPerfil}
-        placeholder="blur"
-        alt=""
-      />
-    </motion.div>
+      <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl md:tracking-[20px]">
+        Acerca de mí
+      </h3>
 
-    <div className="px-0 pb-20 md:px-10 md:pt-8 overflow-x-scroll overflow-y-auto md:overflow-hidden">
-      <p className="text-base md:text-[18px]">
-        Como Desarrollador Full-Stack apasionado, tengo experiencia en la creación de aplicaciones web y e-commerce. Poseo habilidades en la resolución de problemas y trabajo en equipo. Me destaco por mi lógica de programación y mi compromiso con la seguridad y privacidad de los usuarios. Busco una empresa que valore el trabajo en equipo y mis habilidades de resolución de problemas, donde pueda continuar creciendo como profesional. Estoy dispuesto a colaborar en la creación de soluciones innovadoras y eficientes que satisfagan las necesidades de los usuarios.
-      </p>
-    </div>
-  </div>
-</motion.div>
+      <div className="flex flex-col max-h-[100%] space-y-28 items-center pt-36 md:text-left md:flex-row md:space-y-0 md:pt-0">
+        <motion.div
+          initial={{
+            x: -200,
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 1.2,
+          }}
+          className="-mb-20 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[450px] xl:h-[550px] max-h-[85%]"
+        >
+          <Image
+            className="w-full h-full rounded-full object-cover md:rounded-lg"
+            src={fotoPerfil}
+            placeholder="blur"
+            alt=""
+          />
+        </motion.div>
+
+        <div className="px-0 pb-2 md:px-10 md:pt-8 overflow-x-scroll overflow-y-auto md:overflow-hidden">
+          <p className="text-base md:text-[18px]">
+            Como Desarrollador Full-Stack apasionado, tengo experiencia en la
+            creación de aplicaciones web y e-commerce. Poseo habilidades en la
+            resolución de problemas y trabajo en equipo. Me destaco por mi
+            lógica de programación y mi compromiso con la seguridad y privacidad
+            de los usuarios. Busco una empresa que valore el trabajo en equipo y
+            mis habilidades de resolución de problemas, donde pueda continuar
+            creciendo como profesional. Estoy dispuesto a colaborar en la
+            creación de soluciones innovadoras y eficientes que satisfagan las
+            necesidades de los usuarios.
+          </p>
+        </div>
+      </div>
+    </motion.div>
   );
 }
 {

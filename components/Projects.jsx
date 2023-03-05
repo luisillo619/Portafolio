@@ -11,7 +11,7 @@ const projects = [
   {
     name: "Project 2",
     img: pokeApiImg,
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elitsssssssssssssssssssssssssssss assssssssssssssssss asasasasasasasasasasasasasasasasasas asasasasasasasasasasasas.     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, repudiandae. Vitae doloribus autem voluptatibus cupiditate non totam cum neque! Quae similique pariatur perspiciatis vero porro eveniet quidem ducimus sapiente soluta?     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, repudiandae. Vitae doloribus autem voluptatibus cupiditate non totam cum neque! Quae similique pariatur perspiciatis vero porro eveniet quidem ducimus sapiente soluta?",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, mollitia necessitatibus soluta consequatur rerum voluptates at? Nesciunt nulla, autem, explicabo cupiditate quisquam alias doloribus tempore dolor beatae repellendus tempora illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque non officia ratione nisi ducimus consectetur dicta quia eligendi dolores odio, accusantium dolor similique praesentium natus velit sit commodi autem dolorem.Deserunt iusto qui fugit sequi laudantium quam blanditiis vero, alias libero consequuntur illum? Harum ab adipisci magnam veniam sapiente nostrum mollitia molestiae quia voluptates, minima ex quibusdam nam enim cumque.Praesentium laudantium harum dicta et id? Sunt odit maxime veritatis tempora, laborum magnam aperiam harum corrupti consequuntur accusantium! Soluta nobis iste tempore ipsam optio labore amet aliquam deleniti consectetur voluptas?",
 
   },
 ];
@@ -25,15 +25,15 @@ export default function Projects() {
         transition={{ duration: 1.5 }}
         className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
       >
-        <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+        <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-[20px] xs:text-2xl">
           Proyectos
         </h3>
 
-        <div className="relative w-full flex snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+        <div className="relative w-full flex snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 space-x-6">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 snap-center flex flex-col max-h-[100%] space-y-7 items-center justify-center md:p-44 h-screen pt-20 md:pt-0"
+              className="w-full flex-shrink-0 snap-center flex flex-col max-h-[100%] space-y-7 items-center justify-center md:p-44 h-screen pt-20 md:pt-0 "
             >
               <motion.div
                 initial={{ y: -100, opacity: 0 }}
