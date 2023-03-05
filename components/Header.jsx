@@ -13,13 +13,18 @@ import Link from "next/link";
 // scale en animate hace referencia al tamaño que va a tener 1=original. En este caso va a ir de la mitad al tamaño origianl
 
 const animationvariants = {
-  medium: { x: 50, opacity: 1, scale: 1 },
-  large: { x: 500, opacity: 1, scale: 1 },
+  medium: { x: 0, opacity: 1, scale: 1 },
+  large: { x: 0, opacity: 1, scale: 1 },
 };
 
 const initialVariants = {
   medium: { x: -50, opacity: 0, scale: 0.5 },
   large: { x: -500, opacity: 0, scale: 0.5 },
+};
+
+const initialVariants2 = {
+  medium: { x: 50, opacity: 0, scale: 0.5 },
+  large: { x: 500, opacity: 0, scale: 0.5 },
 };
 
 export default function Header() {
@@ -30,6 +35,9 @@ export default function Header() {
   const initialVatiant = isLargeScreen
     ? initialVariants.large
     : initialVariants.medium;
+  const initialVarian2 = isLargeScreen
+    ? initialVariants2.large
+    : initialVariants2.medium;
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -58,16 +66,8 @@ export default function Header() {
         />
       </motion.div>
       <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
+         initial={initialVarian2}
+         animate={animationVariant}
         transition={{
           duration: 1.2,
         }}
