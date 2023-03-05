@@ -49,24 +49,14 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
-      <Link href={"#hero"}>
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex items-center justify-center">
-            <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://github.com/bitswa.png"
-              alt=""
-            />
-          </div>
-        </footer>
-      </Link>
-    </div>
-  );
-}
-{/* <footer className="fixed bottom-14 right-12">
+      <footer className="fixed bottom-14 right-12">
       <Link href="#hero">
         <div className="w-[60px] h-[60px] rounded-md flex justify-center items-center transition-all duration-300 ease-in-out border-none cursor-pointer hover:translate-y-[-10px] hover:bg-[#F7AB0A] hover:text-[#2f2b2b]">
           icono
         </div>
       </Link>
-    </footer> */}
+    </footer> 
+    </div>
+  );
+}
+ 
