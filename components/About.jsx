@@ -15,7 +15,7 @@ export default function About() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden pb-24 md:pb-0"
+      className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden pb-20 md:pb-0"
     >
       <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl md:tracking-[20px]">
         Acerca de mí
