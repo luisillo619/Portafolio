@@ -40,7 +40,7 @@ export default function Hero() {
           <Cursor cursorColor="#f7AB0A" />
         </h1>
 
-        <div className="pt-5 space-x-[0px] md:space-x-4 flex flex-wrap ">
+        <div className="pt-5 space-x-[0px] md:space-x-4">
           <Link href="#about">
             <button className="heroButton">Acerca de</button>
           </Link>
