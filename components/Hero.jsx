@@ -56,9 +56,8 @@ export default function Hero() {
         </div>
         <div className="pt-5 flex items-center justify-center space-x-2">
           <a
-            href="link-a-tu-CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/assets/LuisRangelCV.pdf"
+            download
             className="flex items-center justify-center"
           >
             <h4 className="text-lg">CV</h4>

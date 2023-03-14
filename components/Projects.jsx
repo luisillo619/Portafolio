@@ -1,16 +1,16 @@
-import pokeApiImg from "../public/assets/html.jpg";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const projects = [
   {
     name: "PokeAPI",
-    img: pokeApiImg,
+    img: "",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     name: "Project 2",
-    img: pokeApiImg,
+    img: "",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, mollitia necessitatibus soluta consequatur rerum voluptates at? Nesciunt nulla, autem, explicabo cupiditate quisquam alias doloribus tempore dolor beatae repellendus tempora illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque non officia ratione nisi ducimus consectetur dicta quia eligendi dolores odio, accusantium dolor similique praesentium natus velit sit commodi autem dolorem.Deserunt iusto qui fugit sequi laudantium quam blanditiis vero, alias libero consequuntur illum? Harum ab adipisci magnam veniam sapiente nostrum mollitia molestiae quia voluptates, minima ex quibusdam nam enim cumque.Praesentium laudantium harum dicta et id? Sunt odit maxime veritatis tempora, laborum magnam aperiam harum corrupti consequuntur accusantium! Soluta nobis iste tempore ipsam optio labore amet aliquam deleniti consectetur voluptas?",
 
   },

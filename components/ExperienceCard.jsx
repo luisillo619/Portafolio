@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import imagePerfil from "../public/assets/foto_de_perfil.png";
-import amazon from "../public/assets/amazon.jpg"
+// import amazon from "../public/assets/amazon.jpg"
 
 // space-y-7 es como un space-between o evenly sin necesidad de flex, pero yo definiendo las medidas de separacion. Aplica un espaciado vertical entre los elementos hijos del contenedor(motion.div y div). En este caso, se aplica un espaciado de 7 unidades de medida (como píxeles o em). funciona de manera similar que un gap en grid. osea que aplica margenes entre los cada elemento hijo
 export default function ExperienceCard() {
