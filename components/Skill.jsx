@@ -9,25 +9,25 @@ export default function Skill({ imageSkill, level }) {
         initial={{ scaleX: 0, scaleY: 0, opacity: 0 }}
         whileInView={{ opacity: 1, scaleX: 1, scaleY: 1 }}
         transition={{ duration: 0.8 }}
-        className="rounded-full border border-gray-500 w-24 h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out "
+        className="rounded-full border border-gray-500 w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 filter group-hover:grayscale transition duration-300 ease-in-out "
       >
         <Image
-          className="w-full h-full rounded-full object-content"
+          className="w-full h-full rounded-full object-contain"
           src={imageSkill}
           alt=""
         />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial={{ scaleX: 0, scaleY: 0 }}
         whileInView={{ scaleX: 1, scaleY: 1 }}
         transition={{ duration: 0.8 }}
-        className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-[#d296154f] w-24 h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 rounded-full z-0"
+        className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-[#d296154f] w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 rounded-full z-0"
       >
-        <div className="flex items-center justify-center h-full">
+         <div className="flex items-center justify-center h-full">
           <p className="text-2xl font-bold text-black opacity-100">{level}</p>
-        </div>
-      </motion.div>
+        </div> 
+      </motion.div> */}
     </div>
   );
 }

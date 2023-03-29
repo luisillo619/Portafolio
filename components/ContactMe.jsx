@@ -109,7 +109,7 @@ export default function ContactMe() {
           <div className="flex space-x-2 w-[100%]">
             <input
               placeholder="Nombre"
-              className="contactInput w-[6rem] flex-1 xs:w-[10rem] md:w-[15rem]"
+              className="contactInput w-[6rem] flex-1 xs:w-[10rem] md:w-[15rem] lg:w-[18rem]"
               type="text"
               name="name"
               value={form.name}
@@ -118,7 +118,7 @@ export default function ContactMe() {
             />
             <input
               placeholder="Correo"
-              className="contactInput w-[6rem] flex-1 xs:w-[10rem] md:w-[15rem]"
+              className="contactInput w-[6rem] flex-1 xs:w-[10rem] md:w-[15rem] lg:w-[18rem]"
               type="email"
               name="email"
               value={form.email}

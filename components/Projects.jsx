@@ -1,17 +1,18 @@
-
+import pokedex from "../public/assets/projects/pokedex.png"
+import netflix from"../public/assets/projects/netflix.png"
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const projects = [
   {
     name: "PokeAPI",
-    img: "",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    img: pokedex,
+    description: "Inspirado en el famoso programa Pokémon, desarrollé un Pokedex el cual permite ver, crear, modificar, filtrar y ordenar Pokémons.",
   },
   {
-    name: "Project 2",
-    img: "",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, mollitia necessitatibus soluta consequatur llum. Lorem ipsum, dolor sit amet consectetur a",
+    name: "Netflix Replica",
+    img: netflix,
+    description: "Creacion de replica de netflix con la mayoria de funcionalidad de la aplicacion real. Integracion de parasera de pago, sistema de plan de suscripcion y sistema de registro de ususarios",
 
   },
 ];

@@ -23,7 +23,6 @@ import sql from "../public/assets/iconos sin fondo/sql-removebg-preview.png";
 import tailwind from "../public/assets/iconos sin fondo/TAILWIND-removebg-preview.png";
 import typescript from "../public/assets/iconos sin fondo/typescript-removebg-preview.png";
 
-
 const skills = [
   { id: 1, img: css3, level: "" },
   { id: 2, img: express, level: "" },
@@ -48,27 +47,27 @@ const skills = [
   { id: 21, img: sql, level: "" },
   { id: 22, img: tailwind, level: "" },
   { id: 23, img: typescript, level: "" },
-  ];
+];
 
 import Skill from "./Skill";
 export default function Skills() {
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
       className="flex flex-col relative text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-14 mx-auto items-center justify-center "
     >
       <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl md:tracking-[20px] ">
-        Habilidades
+        Habilidades    
       </h3>
 
       <div
         className="grid grid-cols-2 gap-2 p-5 md:gap-5 max-h-[25rem] 
-         mt-[10%] md:max-h-[32rem] md:scrollbar md:scrollbar-track-gray-400/20 overflow-y-auto md:scrollbar-thumb-[#F7AB0A]/80 sm:grid-cols-3 overflow-x-hidden md:w-[50%] border border-[#F7AB0A]/80"
+         mt-[6%] md:max-h-[32rem] md:scrollbar md:scrollbar-track-gray-400/20 overflow-y-auto md:scrollbar-thumb-[#F7AB0A]/80 sm:grid-cols-3 overflow-x-hidden md:w-[50%] border border-[#F7AB0A]/80 lg:max-h-[35rem]"
       >
         {skills.map((skill) => (
-          <Skill key={skill.id} imageSkill={skill.img} level={skill.level}/>
+          <Skill key={skill.id} imageSkill={skill.img} level={skill.level} />
         ))}
       </div>
     </motion.div>
