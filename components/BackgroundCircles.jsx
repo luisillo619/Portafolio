@@ -4,7 +4,7 @@ export default function BackgroundCircles() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{
+      whileInView={{
         scale: [1, 1.4, 1],
         opacity: [0.5, 1],
         borderRadius: ["20%", "50%", "20%"],

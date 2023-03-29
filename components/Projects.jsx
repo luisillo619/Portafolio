@@ -11,7 +11,7 @@ const projects = [
   {
     name: "Project 2",
     img: "",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, mollitia necessitatibus soluta consequatur rerum voluptates at? Nesciunt nulla, autem, explicabo cupiditate quisquam alias doloribus tempore dolor beatae repellendus tempora illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque non officia ratione nisi ducimus consectetur dicta quia eligendi dolores odio, accusantium dolor similique praesentium natus velit sit commodi autem dolorem.Deserunt iusto qui fugit sequi laudantium quam blanditiis vero, alias libero consequuntur illum? Harum ab adipisci magnam veniam sapiente nostrum mollitia molestiae quia voluptates, minima ex quibusdam nam enim cumque.Praesentium laudantium harum dicta et id? Sunt odit maxime veritatis tempora, laborum magnam aperiam harum corrupti consequuntur accusantium! Soluta nobis iste tempore ipsam optio labore amet aliquam deleniti consectetur voluptas?",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, mollitia necessitatibus soluta consequatur llum. Lorem ipsum, dolor sit amet consectetur a",
 
   },
 ];
@@ -29,7 +29,7 @@ export default function Projects() {
           Proyectos
         </h3>
 
-        <div className="relative w-full flex snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 space-x-6">
+        <div className="relative w-full flex snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 space-x-6 scroll-pb-9">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -68,7 +68,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="w-full absolute top-[30%] bg-[#ff0000]/20 left-0 h-[500px] -skew-y-12"></div>
+        <div className="w-full absolute top-[30%] bg-[#D29615]/20 left-0 h-[500px] -skew-y-12"></div>
       </motion.div>
     </div>
   );

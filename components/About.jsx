@@ -34,7 +34,7 @@ export default function About() {
           transition={{
             duration: 1.2,
           }}
-          className="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[450px] xl:h-[550px] max-h-[85%]"
+          className="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[450px] md:h-[400px] max-h-[85%] xl:h-[550px]"
         >
           <Image
             className="w-full h-full rounded-full object-cover md:rounded-lg"

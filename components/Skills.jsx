@@ -54,22 +54,18 @@ import Skill from "./Skill";
 export default function Skills() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.2 }}
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
       className="flex flex-col relative text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-14 mx-auto items-center justify-center "
     >
       <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl md:tracking-[20px] ">
         Habilidades
       </h3>
 
-      <h3 className="absolute top-36 xl:top-28 uppercase tracking-[3px] text-gray-500 text-sm ">
-        Presiona una habilidad para ver mi nivel:
-      </h3>
-
       <div
         className="grid grid-cols-2 gap-2 p-5 md:gap-5 max-h-[25rem] 
-         mt-[10%] md:max-h-[32rem] md:scrollbar md:scrollbar-track-gray-400/20 overflow-y-auto md:scrollbar-thumb-[#F7AB0A]/80 sm:grid-cols-3 md:grid-cols-4 overflow-x-hidden md:w-[50%] border-2"
+         mt-[10%] md:max-h-[32rem] md:scrollbar md:scrollbar-track-gray-400/20 overflow-y-auto md:scrollbar-thumb-[#F7AB0A]/80 sm:grid-cols-3 overflow-x-hidden md:w-[50%] border"
       >
         {skills.map((skill) => (
           <Skill key={skill.id} imageSkill={skill.img} level={skill.level}/>

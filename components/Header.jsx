@@ -55,15 +55,15 @@ export default function Header() {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.linkedin.com/in/luisrangel-lagunes/"
+          url="https://github.com/luisillo619"
           fgColor="gray"
           bgColor="transparent"
         />
-        <SocialIcon
+        {/* <SocialIcon
           url="https://www.linkedin.com/in/luisrangel-lagunes/"
           fgColor="gray"
           bgColor="transparent"
-        />
+        /> */}
       </motion.div>
       <motion.div
          initial={initialVarian2}

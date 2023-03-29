@@ -1,6 +1,7 @@
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import useContact from "@/hooks/useContact";
 import Loader from "./Loader/Loader";
+import { Link } from "@chakra-ui/react";
 // La propiedad CSS "width: fit-content" se utiliza para establecer el ancho de un elemento de bloque de manera que se ajuste al tamaño de su contenido. se ajustará automáticamente para que sea lo suficientemente grande como para contener todo su contenido, sin importar cuánto sea este contenido.
 
 const INITIAL_CONTACT = {
@@ -70,32 +71,45 @@ export default function ContactMe() {
       </h3>
 
       <div className="flex flex-col space-y-10 max-h-[60%]">
-        {/* text-4xl */}
-        <h4 className="text-[30px] font-semibold text-center mx-24">
+       
+        <h4 className="text-[20px] font-semibold text-center mx-24  w-[80%] self-center xs:w-[80%] md:text-[30px]">
           Tengo justo lo que necesitas.{" "}
           <span className="decoration-[#F7AB0A]/50 underline">Hablemos.</span>
         </h4>
 
-        <div className="space-y-10">
-          <div className="flex items-center space-x-5 justify-center">
+        {/* className="space-y-10 w-96 self-center " */}
+        <div className="space-y-4 w-auto self-center  md:space-y-8">
+          <Link
+            href="https://wa.me/525582482375"
+            target="_blank"
+            className="flex items-center space-x-5 justify-center"
+          >
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
-            <p className="text-2xl">+52 5582482375</p>
-          </div>
-          <div className="flex items-center space-x-5 justify-center ">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
-            {/* text-2xl */}
-            <p className="text-[15px] inline pr-3 md:text-2xl md:pr-0">luiscarlosrangel619@gmail.com</p>
-          </div>
-        </div>
+         
+            <p className="text-1xl md:text-2xl">+52 5582482375</p>
+          </Link>
 
+          <Link
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvnrgzTsqpCggQwllGbGTQJcMRRRpQKQNMWppJPCtbdlJVgvpGJWvCpMPnFPcgrfQLWGBB"
+            target="_blank"
+            className="flex items-center space-x-5 justify-center "
+          >
+            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
+        
+            <p className="text-[15px]  md:pr-0 md:text-[20px]">
+              luiscarlosrangel619@gmail.com
+            </p>
+          </Link>
+        </div>
+        {/* width: fit-content" establece el ancho de un elemento en función de su contenido. */}
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-fit mx-auto  "
         >
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 w-[100%]">
             <input
               placeholder="Nombre"
-              className="contactInput"
+              className="contactInput w-[6rem] flex-1 xs:w-[10rem] md:w-[15rem]"
               type="text"
               name="name"
               value={form.name}
@@ -104,7 +118,7 @@ export default function ContactMe() {
             />
             <input
               placeholder="Correo"
-              className="contactInput"
+              className="contactInput w-[6rem] flex-1 xs:w-[10rem] md:w-[15rem]"
               type="email"
               name="email"
               value={form.email}
@@ -114,7 +128,7 @@ export default function ContactMe() {
           </div>
           <input
             placeholder="Asunto"
-            className="contactInput"
+            className="contactInput flex-1"
             type="text"
             name="subject"
             value={form.subject}
@@ -123,7 +137,7 @@ export default function ContactMe() {
           />
           <textarea
             placeholder="Mensaje"
-            className="contactInput"
+            className="contactInput flex-1"
             name="message"
             value={form.message}
             onChange={handleChange}
@@ -134,7 +148,7 @@ export default function ContactMe() {
             className={
               isLoading
                 ? "opacity-50 cursor-not-allowed bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
-                : "bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+                : "bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg flex-1"
             }
           >
             Enviar
