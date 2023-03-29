@@ -65,7 +65,7 @@ export default function Skills() {
 
       <div
         className="grid grid-cols-2 gap-2 p-5 md:gap-5 max-h-[25rem] 
-         mt-[10%] md:max-h-[32rem] md:scrollbar md:scrollbar-track-gray-400/20 overflow-y-auto md:scrollbar-thumb-[#F7AB0A]/80 sm:grid-cols-3 overflow-x-hidden md:w-[50%] border"
+         mt-[10%] md:max-h-[32rem] md:scrollbar md:scrollbar-track-gray-400/20 overflow-y-auto md:scrollbar-thumb-[#F7AB0A]/80 sm:grid-cols-3 overflow-x-hidden md:w-[50%] border border-[#F7AB0A]/80"
       >
         {skills.map((skill) => (
           <Skill key={skill.id} imageSkill={skill.img} level={skill.level}/>
